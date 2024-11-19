@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOCSAM</title>
+    <link rel="stylesheet" href="jocsam.css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/solid.min.css">
+    <link rel="shortcut icon" href="images/mech logo.jpg" type="image/x-icon">
+    <script src="jocsam.js"></script>
+</head>
+<body>
+    <div class="nav-menu">
+        <ul>
+            <li><a href="http://#">Home</a></li>
+            <li><a href="http://#">Products</a></li>
+            <li><a href="http://#">Shop</a></li>
+            <li><a href="http://#">Contact Us</a></li>
+            <li><a href="http://#">About Us</a></li>
+        </ul>
+        <div class="menu-search-container">
+            <i class="fa fa-search"></i>
+            <input type="search" name="menu-automob-srch" id="navsearch" placeholder="Search products">
+        </div>
+    </div>
+
+
+    <header class="header">
+        <div>
+            <div class="logo">
+                <img src="images/mech logo.jpg" alt="jocsam logo">
+                <h1>JOC<span>SAM</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="http://#">Home</a></li>
+                    <li>
+                        <select title="products" name="products" id="ind_products">
+                            <option class="selected" value="selected" selected disabled>Products</option>
+                            <option value="http://">Cars</option>
+                            <option value="http://">Motor Bikes</option>
+                            <option value="http://">Bikes</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select title="shop" name="shop" id="product_service-shop">
+                            <option class="selected" value="selected" selected disabled>Shop</option>
+                            <option value="http://">Product</option>
+                            <option value="http://">Service</option>
+                        </select>
+                    </li>
+                    <li><a href="http://#">Contact Us</a></li>
+                    <li><a href="http://#">About Us</a></li>
+                </ul>
+                <div class="search-container">
+                    <i class="fa fa-search"></i>
+                    <input type="search" name="automob-srch" id="nav-search" placeholder="Search products">
+                </div>
+            </nav>
+        </div>
+        <button title="hamburger" class="toggle-nav-menu">
+            <span id="bar1"></span>
+            <span id="bar2"></span>
+            <span id="bar3"></span>
+        </button>
+    </header>
+
+    
+    <main>
+        <section class="wlc-sect">
+            <video class="wlc-vid" src="videos/toyota-bg-vid.mp4" autoplay loop muted></video>
+            <h2 class="wlc-msg">WELCOME TO JOCSAM</h2>
+            <h2 class="msg-srv">AUTO MOBILE AND MECHANICS</h2>
+            <p class="info">We provide authentic services and high quality products to our customers. <br> We are here to serve you.</p>
+            <div class="ord">
+                <h3>Make an Order</h3>
+                <i class="fa fa-arrow-down-long fa-2x"></i>
+                <div class="orders">
+                    <a href="http://#">--Order a Product--</a>
+                    <a href="http://#">--Order a Service--</a><br>
+                </div>
+            </div>
+            <button type="submit">Inquire</button>
+        </section>
+        <section class="prods_servs_transactions">
+            <div class="prods_servs">
+                <p class="prod-intro">These are our; <br> <a href="http://">PRODUCTS/SERVICES</a></p>
+                <div class="prods" id="cars">
+                    <img src="images/car4.png" alt="car-products" srcset="">
+                    <p class="prod_note" id="car_prod_note"> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Illum nemo libero id. A explicabo aliquam, libero soluta neque voluptatum.
+                        Obcaecati libero at eaque recusandae ipsam quis atque eveniet voluptatibus labore?</span><br>
+                        <button type="button">Explore Brands</button><br>
+                        <input type="search" name="brand_search" id="car_brand_search" placeholder="Search Brand">
+                    </p>
+                </div>
+                <div class="prods" id="mottorbike">
+                    <img src="images/bike3.png" alt="car-products" srcset="">
+                    <p class="prod_note" id="mottor_prod_note"> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Illum nemo libero id. A explicabo aliquam, libero soluta neque voluptatum.
+                        Obcaecati libero at eaque recusandae ipsam quis atque eveniet voluptatibus labore?</span><br>
+                        <button type="button">Explore Brands</button><br>
+                        <input type="search" name="brand_search" id="mottor_brand_search" placeholder="Search Brand">
+                    </p>
+                    
+                </div>
+                <div class="prods" id="bicycle">
+                    <img src="images/bicycle3.png" alt="car-products" srcset="">
+                    <p class="prod_note" id="bicycle_prod_note"> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Illum nemo libero id. A explicabo aliquam, libero soluta neque voluptatum.
+                        Obcaecati libero at eaque recusandae ipsam quis atque eveniet voluptatibus labore?</span><br>
+                        <button type="button">Explore Brands</button><br>
+                        <input type="search-box" name="brand_search" id="bicycle_brand_search" placeholder="Search Brand">
+                    </p>
+                </div>
+            </div>
+            <div class="transactions">
+                <iframe title="transactions" src="#" frameborder="2" name="frame"></iframe>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <!-- <video class="foot-vid" src="videos/Motorcycle Cinematic Short Film.mp4" autoplay loop muted></video> -->
+        <div class="footer-infos">
+            <div class="about">
+                <h2>About Us</h2>
+                <a href="http://#">About Us</a>
+                <a href="http://#">Press</a>
+                <a href="http://#">Careers</a>
+                <a href="http://#">Testimonials</a>
+                <a href="http://#">Press Releases</a>
+                <a href="http://#">Press Contact</a>
+                <a href="http://#">Press Inquiries</a>
+                <a href="http://#">Press Kit</a>
+                <a href="http://#">Press Gallery</a>
+            </div>
+
+            
+            <div class="other-servs">
+                <h2>Other services</h2>
+                <a href="http://#">Car accessories</a>
+                <a href="http://#">Motorcycle accessories</a>
+                <a href="http://#">Bicycle accessories</a>
+                <a href="http://#">Car insurance</a>
+                <a href="http://#">Motorcycle insurance</a>
+            </div>
+            
+            <div class="contacts"> 
+                <h2>Contact Us</h2>
+                <a href="tel:+"><i class="fa fa-phone fa-2x"></i>0598658861</a>
+                <a href="http://#"><i class="fab fa-facebook fa-2x"></i>Facebook</a>
+                <a href="http://#"><i class="fab fa-whatsapp fa-2x"></i>Whatsapp</a>
+                <a href="http://#"><i class="fab fa-instagram fa-2x"></i>Instagram</a>
+                <a href="http://#"><i class="fab fa-telegram fa-2x"></i>Telegram</a>
+            </div>
+        </div>
+        <p class="copyright">Copyright © 2023 JOCSAM. All rights reserved.</p>
+    </footer>
+</body>
+</html>
