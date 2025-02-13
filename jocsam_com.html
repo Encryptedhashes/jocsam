@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOCSAM Sales Hub</title>
+    <link rel="stylesheet" href="jocsam_com.css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/solid.min.css">
+    <link rel="shortcut icon" href="images/mech logo.jpg" type="image/x-icon">
+    <script src="jocsam_com.js"></script>
+</head>
+<body>
+    <div class="nav-menu">
+        <ul>
+            <li><a href="http://#">Home</a></li>
+            <li><a href="#product-spareparts">Parts</a></li>
+            <li><a href="http://#">Shop</a></li>
+            <li><a href="http://#">Contact Us</a></li>
+            <li><a href="http://#">About Us</a></li>
+        </ul>
+        <div class="menu-search-container">
+            <i class="fa fa-search"></i>
+            <input type="search" name="menu-automob-srch" id="navsearch" placeholder="Search products">
+        </div>
+    </div>
+
+    <header class="header">
+        <div>
+            <div class="logo">
+                <img src="images/mech logo.jpg" alt="jocsam logo">
+                <h1>JOC<span>SAM</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/jocsam.html">Home</a></li>
+                    <li>
+                        <select title="products" name="products" id="ind_products">
+                            <option class="selected" value="selected" selected disabled>Parts</option>
+                            <option value="carparts">Cars</option>
+                            <option value="bikeparts">Motor Bikes</option>
+                            <option value="bicycleparts">Bikes</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select title="shop" name="shop" id="product_service_shop">
+                            <option class="selected" value="selected" selected disabled>Shop</option>
+                            <option value="http://">Product</option>
+                            <option value="http://">Service</option>
+                        </select>
+                    </li>
+                    <li><a href="http://#">Updates</a></li>
+                    <li><a href="http://#">About Us</a></li>
+                </ul>
+                <div class="search-container">
+                    <i class="fa fa-search"></i>
+                    <input type="search" name="automob-srch" id="nav-search" placeholder="Search products">
+                </div>
+            </nav>
+        </div>
+        <button title="hamburger" class="toggle-nav-menu">
+            <span id="bar1"></span>
+            <span id="bar2"></span>
+            <span id="bar3"></span>
+        </button>
+    </header>
+
+    
+    <main>
+        <section class="hero">
+            <h1>Shop Our Latest Products</h1>
+            <p>Find the best deals on cars, bikes, bicycles</p>
+            <a href="#product-brands" class="cta-button">Explore Now<br><i class="fa fa-arrow-down-long"></i></a>
+        </section>
+
+        <!-- Product Categories -->
+        <section id="product-brands">
+            <h2>Product Categories</h2>
+            <div class="brands">
+                <div class="product-category" id="cars">
+                    <div class="left-pane">
+                        <select title="car-brands" id="car-brands" class="brand-dropdown">
+                            <option value="" disabled selected>Car Brand</option>
+                            <option value="Volkswagen">Volkswagen</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Benz">Mercedes-Benz</option>
+                            <option value="Ford">Ford Motors</option>
+                            <option value="General">General Motors</option>
+                            <option value="BMW">BMW Group</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Hyundai">Hyundai</option>
+                            <option value="SAIC">SAIC Group</option>
+                            <option value="FAW">FAW Group</option>
+                            <option value="Dongfeng">Dongfeng</option>
+                            <option value="Tesla">Tesla</option>
+                            <option value="Nissan">Nissan</option>
+                            <option value="GAC">GAC Group</option>
+                            <option value="KIA">KIA</option>
+                            <option value="Renault">Renault</option>
+                            <option value="BYD">BYD Auto</option>
+                            <option value="Tata">Tata Motors</option>
+                            <option value="Suzuki">Suzuki</option>
+                            <option value="Mazda">Mazda</option>
+                            <option value="BAIC">BAIC</option>
+                            <option value="Izuzu">Izuzu</option>
+                            <option value="Geely">Geely</option>
+                            <option value="Subara">Subara</option>
+                            <!-- Add more car brands -->
+                        </select>
+                        <div class="brand-products" id="Cars-product-list">
+                            <!-- car brand products displayed here -->
+                        </div>
+                    </div>
+                    <div class="right-pane" id="Cars-right-pane">
+                        <button class="prev-button"><i class="fas fa-arrow-left fa-2x"></i></button>
+                        <img class="large-image" alt="Select a product to view larger image">
+                        <button class="next-button"><i class="fas fa-arrow-right fa-2x"></i></button>
+                        <button class="purchase-button">Purchase<i class="fa fa-shopping-cart"></i></button>
+                        <!-- zoomed selected car image with details -->
+                    </div>
+                </div>
+
+                <div class="product-category" id="bikes">
+                    <div class="left-pane">
+                        <select title="bike-brands" id="bike-brands" class="brand-dropdown">
+                            <option value="" disabled selected>Bike Brand</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Hero">Hero Motor</option>
+                            <option value="Yamaha">Yamaha</option>
+                            <option value="Yadea">Yadea</option>
+                            <option value="TVS">TVS Motor</option>
+                            <option value="Bajaj">Bajaj Auto</option>
+                            <option value="Haojue">Haojue</option>
+                            <option value="Suzuki">Suzuki</option>
+                            <option value="Loncin">Loncin</option>
+                            <option value="Zongshen">Zongshen</option>
+                            <option value="HarleyD">Harley-Davidson</option>
+                            <!-- Add more bike brands -->
+                        </select>
+                        <div class="brand-products" id="Bikes-product-list">
+                            <!-- bike brand products displayed here -->
+                        </div>
+                    </div>
+                    <div class="right-pane" id="Bikes-right-pane">
+                        <button class="prev-button"><i class="fas fa-arrow-left fa-2x"></i></button>
+                        <img class="large-image" alt="Select a product to view larger image">
+                        <button class="next-button"><i class="fas fa-arrow-right fa-2x"></i></button>
+                        <button class="purchase-button">Purchase<i class="fa fa-shopping-cart"></i></button>
+                        <!-- zoomed selected bike image with details -->
+                    </div>
+                </div>
+
+                <div class="product-category" id="bicycles">
+                    <div class="left-pane">
+                        <select title="bicycle-brands" id="bicycle-brands" class="brand-dropdown">
+                            <option value="" disabled selected>Bicycle Brand</option>
+                            <option value="Giant">Giant</option>
+                            <option value="Trek">Trek</option>
+                            <option value="Cannondale">Cannondale</option>
+                            <option value="Bianchi">Bianchi</option>
+                            <option value="Scott">Scott</option>
+                            <option value="Merida">Merida</option>
+                            <option value="Colnago">Colnago</option>
+                            <option value="Fuji">Fuji</option>
+                            <option value="Brompton">Brompton</option>
+                            <!-- Add more bicycle brands -->
+                        </select>
+                        <div class="brand-products" id="Bicycles-product-list">
+                            <!-- bicycle brand products displayed here -->
+                        </div>
+                    </div>
+                    <div class="right-pane" id="Bicycles-right-pane">
+                        <button class="prev-button"><i class="fas fa-arrow-left fa-2x"></i></button>
+                        <img class="large-image" alt="Select a product to view larger image">
+                        <button class="next-button"><i class="fas fa-arrow-right fa-2x"></i></button>
+                        <button class="purchase-button">Purchase<i class="fa fa-shopping-cart"></i></button>
+                        <!-- zoomed selected bicycle image with details -->
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+
+        <section id="product-spareparts" >
+            <div class="accessories">
+                <h2>Car Parts/Accessories</h2>
+                <div class="parts" id="carparts">
+                    <div class="item">
+                        <img src="images/ac-compressor.jpg.webp" alt="" sizes="" srcset="">
+                        <p class="details">
+                            <a href="http://">link to part types</a>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="images/ac-condenser.jpg.webp" alt="" sizes="" srcset="">
+                        <p class="details">
+                            <a href="http://">link to part types</a>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="images/air-filter.jpg.webp" alt="" sizes="" srcset="">
+                        <p class="details">
+                            <a href="http://">link to part types</a>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="images/alternator.jpg.webp" alt="" sizes="" srcset="">
+                        <p class="details">
+                            <a href="http://">link to part types</a>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="images/automotive-starting-and-charging-system.jpg.webp" alt="" sizes="" srcset="">
+                        <p class="details">
+                            <a href="http://">link to part types</a>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="images/automotive-cooling-system-1.jpg.webp" alt="" sizes="" srcset="">
+                        <p class="details">
+                            <a href="http://">link to part types</a>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="images/automotive-fuel-system.jpg.webp" alt="" sizes="" srcset="">
+                        <p class="details">
+                            <a href="http://">link to part types</a>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="images/automotive-shocks.jpg.webp" alt="" sizes="" srcset="">
+                        <p class="details">
+                            <a href="http://">link to part types</a>
+                        </p>
+                    </div>
+                </div>
+
+                <h2>Motorcycle Parts/Accessories</h2>
+                <div class="parts" id="bikeparts">
+                    <div class="item">
+                        <img src="images/axle bic.jfif" alt="" sizes="" srcset="">
+                        <p class="details">
+                            <a href="http://">link to part types</a>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="images/axle-shaft.jpg.webp" alt="" sizes="" srcset="">
+                        <p class="details">
+                            <a href="http://">link to part types</a>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="images/banner68.jpg" alt="" sizes="" srcset="">
+                        <p class="details">
+                            <a href="http://">link to part types</a>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="images/brake-booster.jpg.webp" alt="" sizes="" srcset="">
+                        <p class="details">
+                            <a href="http://">link to part types</a>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="images/brake-calipers-1024x680.jpg.webp" alt="" sizes="" srcset="">
+                        <p class="details">
+                            <a href="http://">link to part types</a>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="images/brake-lines.jpg.webp" alt="" sizes="" srcset="">
+                        <p class="details">
+                            <a href="http://">link to part types</a>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="images/brake-pad-and-disc.jpg.webp" alt="" sizes="" srcset="">
+                        <p class="details">
+                            <a href="http://">link to part types</a>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="images/car-battery.jpg.webp" alt="" sizes="" srcset="">
+                        <p class="details">
+                            <a href="http://">link to part types</a>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="images/car-control-module.jpg.webp" alt="" sizes="" srcset="">
+                        <p class="details">
+                            <a href="http://">link to part types</a>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="images/control-arm.jpg.webp" alt="" sizes="" srcset="">
+                        <p class="details">
+                            <a href="http://">link to part types</a>
+                        </p>
+                    </div>
+
+                </div>
+                
+                <h2>Bicycle Parts/Accessories</h2>
+                <div class="parts" id="bicycleparts">
+                    <div class="item">
+                        <img src="images/transmission-assembly.jpg.webp" alt="" sizes="" srcset="">
+                        <p class="details">
+                            <a href="http://">link to part types</a>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="images/brake-shoes-and-drums.jpg.webp" alt="" sizes="" srcset="">
+                        <p class="details">
+                            <a href="http://">link to part types</a>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="images/cylinder-head.jpg.webp" alt="" sizes="" srcset="">
+                        <p class="details">
+                            <a href="http://">link to part types</a>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="images/exhaust-pipe.jpg.webp" alt="" sizes="" srcset="">
+                        <p class="details">
+                            <a href="http://">link to part types</a>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="images/steering-gear.jpg.webp" alt="" sizes="" srcset="">
+                        <p class="details">
+                            <a href="http://">link to part types</a>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="images/transmission-assembly.jpg.webp" alt="" sizes="" srcset="">
+                        <p class="details">
+                            <a href="http://">link to part types</a>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="images/radiator-hose.jpg.webp" alt="" sizes="" srcset="">
+                        <p class="details">
+                            <a href="http://">link to part types</a>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="images/EGR-valve.jpg.webp" alt="" sizes="" srcset="">
+                        <p class="details">
+                            <a href="http://">link to part types</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- <video class="foot-vid" src="videos/Motorcycle Cinematic Short Film.mp4" autoplay loop muted></video> -->
+        <div class="footer-infos">
+            <div class="about">
+                <h2>About Us</h2>
+                <a href="http://#">About Us</a>
+                <a href="http://#">Press</a>
+                <a href="http://#">Careers</a>
+                <a href="http://#">Testimonials</a>
+                <a href="http://#">Press Releases</a>
+                <a href="http://#">Press Contact</a>
+                <a href="http://#">Press Inquiries</a>
+                <a href="http://#">Press Kit</a>
+                <a href="http://#">Press Gallery</a>
+            </div>
+
+            
+            <div class="other-servs">
+                <h2>Other services</h2>
+                <a href="http://#">Car accessories</a>
+                <a href="http://#">Motorcycle accessories</a>
+                <a href="http://#">Bicycle accessories</a>
+                <a href="http://#">Car insurance</a>
+                <a href="http://#">Motorcycle insurance</a>
+            </div>
+            
+            <div class="contacts"> 
+                <h2>Contact Us</h2>
+                <a href="tel:+"><i class="fa fa-phone fa-2x"></i>0598658861</a>
+                <a href="http://#"><i class="fab fa-facebook fa-2x"></i>Facebook</a>
+                <a href="http://#"><i class="fab fa-whatsapp fa-2x"></i>Whatsapp</a>
+                <a href="http://#"><i class="fab fa-instagram fa-2x"></i>Instagram</a>
+                <a href="http://#"><i class="fab fa-telegram fa-2x"></i>Telegram</a>
+            </div>
+        </div>
+        <p class="copyright">Copyright © 2023 JOCSAM. All rights reserved.</p>
+    </footer>
+</body>
+</html>

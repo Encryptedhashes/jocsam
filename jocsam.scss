@@ -96,6 +96,7 @@ header{
                 width: 6em;
                 text-align: center;
 
+
                 &:hover{
                         border-left: solid;
                         border-bottom: solid;
@@ -315,10 +316,10 @@ header{
                         border-radius: 10px;
         
                         &:hover{
-                            background: transparentize($color: blue, $amount: 0.6);
+                            border: solid 2px white;
                             color: white;
                             &:active{
-                                background: linear-gradient(to top, aqua, grey, white);
+                                border: solid 3px aqua;
                             }
                         }
                     }
@@ -384,23 +385,32 @@ header{
                     display: flex;
                     gap: 1em;
                     width: 50%;
-                    height: auto;
+                    height: 25%;
                     border-radius: 10px;
+                    position: relative;
                     
                     img{
-                        width: 90%;
-                        height: inherit;
+                        width: 300px;
+                        height: 300px;
                     }
 
                     .prod_note{
                         display: none;
-
+                        margin-top: 1em;
+                        font-size: 13px;
+                        color: black;
+                        font-weight: 700;
+                        font-style: italic;
+                        width: 50%;
+                        //height: 70%;
+                        align-items: center;
+                        
                         button{
                             background: linear-gradient(45deg, rgba(25, 255, 255, 0.986), rgba(255, 255, 255, 0.986));
                             border: none;
                             border-radius: 5px;
                             padding: 0.3rem 1em 0.3em 1em;
-                            margin: 3em 0em 0.5em 0em;
+                            margin: 2em 0em 0.5em 0em;
                             color: white;
                             font-size: 1.5em;
                             font-family: Georgia, 'Times New Roman', Times, serif;
@@ -431,28 +441,22 @@ header{
                         z-index: 3;
                         //position: relative;
                         background-color: lightgray;
-                        margin: 0em 0em 0em 0em;
-                        padding: 2px;
+                        //margin: 1em 0em;
+                        //padding: 2px;
                         background: linear-gradient(grey, white);
+                        transition: all .5s ease-out;
 
                         img{
                             transform: scale(0.7);
                             transition-duration: 1s;
-                            width: 50%;
-                            height: inherit;
+                            // width: 300px;
+                            // height: 300px;
                         }
 
                         .prod_note{
-                            display: block;
                             transform: translateX(-8%);
-                            transition: all 1.3s 1.3s ease-in-out;
-                            margin-top: 1em;
-                            font-size: 13px;
-                            color: black;
-                            font-weight: 700;
-                            font-style: italic;
-                            width: auto;
-                            align-items: center;
+                            transition: all 1.3s 1.3s ease-out;
+                            display: block;
 
                         }
                         
@@ -535,8 +539,13 @@ header{
                 }
                 
                 a{
-                text-decoration: none;
-                color: white;
+                    text-decoration: none;
+                    color: white;
+
+                    &:hover{
+                        box-shadow: -2px 2px 3px aqua;
+                    }
+
                     i{
                         margin-right: 0;
                     }
@@ -557,7 +566,11 @@ header{
                 
                 a{
                     text-decoration: none;
-                color: white;
+                    color: white;
+
+                    &:hover{
+                        box-shadow: -2px 2px 3px aqua;
+                    }
                 i{
                     margin-right: 0;
                 }
@@ -576,6 +589,10 @@ header{
                 a{
                 text-decoration: none;
                 color: white;
+
+                &:hover{
+                    box-shadow: -2px 2px 3px aqua;
+                }
                     i{
                         margin-right: 0;
                     }

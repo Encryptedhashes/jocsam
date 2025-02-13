@@ -313,12 +313,12 @@ main .wlc-sect .ord a {
 }
 
 main .wlc-sect .ord a:hover {
-  background: rgba(0, 0, 255, 0.4);
+  border: solid 2px white;
   color: white;
 }
 
 main .wlc-sect .ord a:hover:active {
-  background: linear-gradient(to top, aqua, grey, white);
+  border: solid 3px aqua;
 }
 
 main .wlc-sect button {
@@ -380,17 +380,25 @@ main .prods_servs_transactions .prods_servs .prods {
   display: flex;
   gap: 1em;
   width: 50%;
-  height: auto;
+  height: 25%;
   border-radius: 10px;
+  position: relative;
 }
 
 main .prods_servs_transactions .prods_servs .prods img {
-  width: 90%;
-  height: inherit;
+  width: 300px;
+  height: 300px;
 }
 
 main .prods_servs_transactions .prods_servs .prods .prod_note {
   display: none;
+  margin-top: 1em;
+  font-size: 13px;
+  color: black;
+  font-weight: 700;
+  font-style: italic;
+  width: 50%;
+  align-items: center;
 }
 
 main .prods_servs_transactions .prods_servs .prods .prod_note button {
@@ -398,7 +406,7 @@ main .prods_servs_transactions .prods_servs .prods .prod_note button {
   border: none;
   border-radius: 5px;
   padding: 0.3rem 1em 0.3em 1em;
-  margin: 3em 0em 0.5em 0em;
+  margin: 2em 0em 0.5em 0em;
   color: white;
   font-size: 1.5em;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -426,29 +434,19 @@ main .prods_servs_transactions .prods_servs .prods:hover {
   width: 75%;
   z-index: 3;
   background-color: lightgray;
-  margin: 0em 0em 0em 0em;
-  padding: 2px;
   background: linear-gradient(grey, white);
+  transition: all .5s ease-out;
 }
 
 main .prods_servs_transactions .prods_servs .prods:hover img {
   transform: scale(0.7);
   transition-duration: 1s;
-  width: 50%;
-  height: inherit;
 }
 
 main .prods_servs_transactions .prods_servs .prods:hover .prod_note {
-  display: block;
   transform: translateX(-8%);
-  transition: all 1.3s 1.3s ease-in-out;
-  margin-top: 1em;
-  font-size: 13px;
-  color: black;
-  font-weight: 700;
-  font-style: italic;
-  width: auto;
-  align-items: center;
+  transition: all 1.3s 1.3s ease-out;
+  display: block;
 }
 
 main .prods_servs_transactions .transactions {
@@ -513,6 +511,10 @@ footer .footer-infos .about a {
   color: white;
 }
 
+footer .footer-infos .about a:hover {
+  box-shadow: -2px 2px 3px aqua;
+}
+
 footer .footer-infos .about a i {
   margin-right: 0;
 }
@@ -533,6 +535,10 @@ footer .footer-infos .other-servs a {
   color: white;
 }
 
+footer .footer-infos .other-servs a:hover {
+  box-shadow: -2px 2px 3px aqua;
+}
+
 footer .footer-infos .other-servs a i {
   margin-right: 0;
 }
@@ -551,6 +557,10 @@ footer .footer-infos .contacts h2 {
 footer .footer-infos .contacts a {
   text-decoration: none;
   color: white;
+}
+
+footer .footer-infos .contacts a:hover {
+  box-shadow: -2px 2px 3px aqua;
 }
 
 footer .footer-infos .contacts a i {
